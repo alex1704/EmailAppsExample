@@ -11,6 +11,7 @@
 		FA4C1F8229702F6100CDAA1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C1F8129702F6100CDAA1F /* ContentView.swift */; };
 		FA4C1F8429702F6200CDAA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4C1F8329702F6200CDAA1F /* Assets.xcassets */; };
 		FA4C1F8729702F6200CDAA1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4C1F8629702F6200CDAA1F /* Preview Assets.xcassets */; };
+		FA4C1F8F297030D500CDAA1F /* EmailApps in Frameworks */ = {isa = PBXBuildFile; productRef = FA4C1F8E297030D500CDAA1F /* EmailApps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FA4C1F8129702F6100CDAA1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA4C1F8329702F6200CDAA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA4C1F8629702F6200CDAA1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA4C1F90297032BD00CDAA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4C1F8F297030D500CDAA1F /* EmailApps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		FA4C1F7E29702F6100CDAA1F /* EmailAppsExample */ = {
 			isa = PBXGroup;
 			children = (
+				FA4C1F90297032BD00CDAA1F /* Info.plist */,
 				FA4C1F7F29702F6100CDAA1F /* EmailAppsExampleApp.swift */,
 				FA4C1F8129702F6100CDAA1F /* ContentView.swift */,
 				FA4C1F8329702F6200CDAA1F /* Assets.xcassets */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = EmailAppsExample;
+			packageProductDependencies = (
+				FA4C1F8E297030D500CDAA1F /* EmailApps */,
+			);
 			productName = EmailAppsExample;
 			productReference = FA4C1F7C29702F6100CDAA1F /* EmailAppsExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = FA4C1F7329702F6000CDAA1F;
+			packageReferences = (
+				FA4C1F8D297030D400CDAA1F /* XCRemoteSwiftPackageReference "EmailApps" */,
+			);
 			productRefGroup = FA4C1F7D29702F6100CDAA1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +280,7 @@
 				DEVELOPMENT_TEAM = 2QU35J8G95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmailAppsExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +310,7 @@
 				DEVELOPMENT_TEAM = 2QU35J8G95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmailAppsExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA4C1F8D297030D400CDAA1F /* XCRemoteSwiftPackageReference "EmailApps" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alex1704/EmailApps";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA4C1F8E297030D500CDAA1F /* EmailApps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA4C1F8D297030D400CDAA1F /* XCRemoteSwiftPackageReference "EmailApps" */;
+			productName = EmailApps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA4C1F7429702F6000CDAA1F /* Project object */;
 }

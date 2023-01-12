@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "emailapps",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alex1704/EmailApps",
+      "state" : {
+        "branch" : "main",
+        "revision" : "69a48c66d37069d0b697dd9746f43829300e3c46"
+      }
+    }
+  ],
+  "version" : 2
+}
